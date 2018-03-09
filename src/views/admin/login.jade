@@ -1,0 +1,17 @@
+extends layout/adminHeader
+block content
+  link(href="/admin/css/login-page.css" rel="stylesheet")
+  script(src="/admin/js/login-page.js" type="text/javascript")
+  .app
+    .login-page
+      .login-in
+        h1 登陆页面
+        form(action="/admin/login" method="get" id="loginForm")
+          .form-control
+            i.form-label.icon-user
+            input.form-input(name="name" type="text" placeholder="请输入用户名")
+          .form-control
+            i.form-label.icon-lock
+            input.form-input(name="password" type="password" placeholder="请输入密码")
+          .form-submit
+            input(type="submit" class="btn-submit" value="登陆")

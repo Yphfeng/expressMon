@@ -1,0 +1,11 @@
+extends ../layout/header
+block content
+  include ../layout/topbar
+  .box
+    .container
+      .container-left
+        .oneProgramDiv
+          h5.title= one.title
+          .content!= one.content
+      .container-right
+        include ./archive

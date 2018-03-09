@@ -1,0 +1,22 @@
+extends ../../layout/adminHeader
+include ../../nav/adminTopbar
+block content
+  link(rel="stylesheet" href="/admin/css/program.css")
+  script(src="/admin/js/program.js")
+  include ../../nav/adminSidebar
+  .content
+    a(href="/admin/tag/add")
+      button(class="btn btn-success") 添加新的标签
+    h4 已有程序标签
+    table(class="table table-hover")
+      thead
+        th 标签
+        th 操作
+      each item in tags
+        tr
+          td= item.name
+          td
+            a(href="/admin/tag/edit?_id=#{item._id}")
+              button(class="btn btn-xs btn-info") 修改
+            a(href="/admin/tag/del?_id=#{item._id}")
+              button(class="btn btn-xs btn-danger") 删除

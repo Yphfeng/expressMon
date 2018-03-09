@@ -1,0 +1,10 @@
+extends ../layout/header
+block content
+  include ../layout/topbar
+  .container
+    .container-left
+      .oneProgramDiv
+        h5.title= one.title
+        .content!= one.content
+    .container-right
+      include ./archiveLife

@@ -1,0 +1,192 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "MICROSOFT YAHEI";
+	font-size: 14px;
+}
+ul{
+	padding: 0;
+	margin: 0;
+}
+ul li{
+	list-style: none;
+}
+ul li a{
+	text-decoration: none;
+}
+.cc-navbar{
+	background-color: #14a3b9;
+}
+.cc-navbar .in-navbar,.container{
+	width: 1000px;
+	margin: 0 auto;
+}
+.box{
+	background-color: #fff;
+	padding: 20px 0 40px;
+	min-height: 450px;
+}
+.container:after{
+	content:'';
+	clear: both;
+	display: table;
+}
+.cc-navbar:after{
+	content:'';
+	clear: both;
+	display: table;
+}
+.cc-navbar li{
+	float: left;
+	margin: 10px 20px;
+}
+.cc-navbar li:first-child{
+	margin-left: 10px;
+}
+.cc-navbar li a{
+	color: #fff;
+	transition: all .5s ease;
+}
+.cc-navbar li a:hover{
+	color: #000;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right
+}
+.clearfix{
+	clear: both;
+}
+ul.navbar-list.left{
+
+}
+.container-left{
+	float: left;
+	width: 720px;
+}
+.container-right{
+	float: right;
+	width: calc(100% - 770px);
+}
+.list{
+	margin:0;
+	padding:0;
+	transition: all .3s ease;
+	padding: 10px;
+	border-radius: 3px;
+}
+.list:hover{
+	background-color: rgba(20,163,185,.1);
+}
+.list .item .programDiv{
+	display: block;
+}
+.list .item .programDiv .sub-title{
+	height: 30px;
+	line-height: 30px;
+}
+.list .item .programDiv .sub-title:after{
+	content:'';
+	clear: both;
+	display: table;
+}
+.list .item .programDiv h5{
+	color: #14a3b9;
+	font-size: 16px;
+	font-weight: normal;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+.list .item .programDiv .label{
+	color: rgba(128,128,128,.73);
+}
+.list .item .programDiv p{
+	font-size: 14px;
+	color: #666;
+	text-indent: 20px;
+	letter-spacing: 1px;
+	line-height: 20px;
+}
+.tag {
+  cursor: pointer;
+  padding: 2px 6px;
+  color: white;
+  border-radius: 3px;
+  margin: 5px 3px;
+  display: inline-block;
+}
+
+.tag a,.tag a:hover {
+  color: white;
+  text-decoration: none;
+}
+.green-tag {
+  background-color: #4caf50;
+}
+
+.yellow-tag {
+  background-color: #FFC107;
+}
+
+.blue-tag {
+  background-color: #2196F3;
+}
+
+.my-tag {
+  background-color: #3eb1c3;
+}
+.archive-latest{
+	color: #6d6d6d;
+	margin-top: 20px;
+}
+.archive-latest ul{
+	margin: 0;
+	padding: 0;
+	padding-left: 18px;
+}
+.archive-latest li{
+	list-style:outside disc;
+	padding: 5px;
+}
+/*footer*/
+.cc-footer {
+    width: 100%;
+    padding: 20px 10px 50px;
+    background-color: rgba(64, 180, 199, 0.15);
+    box-sizing: border-box;
+}
+
+.footer {
+  width: 1000px;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  color: #6d6d6d;
+  font-size: 12px !important;
+}
+
+.footer-introduce {
+  width: 1000px;
+  margin: auto;
+  color: #6d6d6d;
+}
+
+.footer img {
+  width: 180px;
+  height: 180px;
+}
+
+/*添加博文*/
+.content img{
+	width: 100%;
+}
+.M-box{
+	width: 1000px;
+	margin: 20px auto;
+}
+.M-box a{
+	text-decoration: none;
+}

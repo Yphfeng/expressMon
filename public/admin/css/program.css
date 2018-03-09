@@ -1,0 +1,51 @@
+.sideBar{
+	float:left;
+	width: 200px;
+	background: #495060;
+}
+.sideBar a{
+	display: block;
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+	text-decoration: none;
+	padding: 15px;
+}
+.sideBar a:hover{
+	background: #363e4f;
+}
+.addProgram {
+	width: calc(100% - 220px);
+}
+.addProgram h4{
+	padding: 0;
+	margin: 0 0 20px 0;
+}
+.table{
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+.table td{
+	border: 1px solid #ccc;
+	padding: 5px 10px;
+}
+.table .item{
+	word-break: keep-all;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: calc(100% - 1px);
+}
+.table th{
+	border:1px solid #ccc;
+	padding: 5px 10px;
+}
+.table td a{
+	padding: 0 10px;
+	margin: 0 10px;
+	text-decoration: none;
+	color: #666;
+	border: 1px solid #ccc;
+}

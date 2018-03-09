@@ -1,0 +1,46 @@
+.cc-navbar
+  .in-navbar
+    ul.navbar-list.left
+      li(id="about")
+        a(href="/" style="color: #9cffc5;font-size: 15px;") 枫云亦然
+      li(id="program")
+        a(href="/") 首页
+      li
+        a(href="/about") 关于我
+      li(id="resource")
+        a(href="/life") 生活感悟
+      li(id="skill")
+        a(href="/skill") 技术分享
+      li(id="component")
+        a(href="") 留言
+    //- ul.navbar-list.right
+    //-   li
+    //-     a(href="") 登陆
+script(type="text/javascript").
+  if (location.pathname.indexOf('/program') != -1 || location.pathname == '/') {
+    document.querySelector('#program').className = 'header-active';
+  } else if (location.pathname.indexOf('/trans') != -1) {
+    document.querySelector('#trans').className = 'header-active';
+  } else if (location.pathname.indexOf('tools') != -1) {
+    document.querySelector('#tools').className = 'header-active';
+  } else if (location.pathname.indexOf('resource') != -1) {
+    document.querySelector('#resource').className = 'header-active';
+  }
+style(media="screen").
+  .title {
+
+  }
+  .WB_widgets {
+    padding: 7px 0 0 0;
+  }
+  .login_button_32 img{
+    height: 25px;
+    width: 28px;
+  }
+  .login_button_32 a {
+    color: white;
+    padding-left: 5px;
+  }
+  .loginout{
+    color: #d4d2d2 !important;
+  }

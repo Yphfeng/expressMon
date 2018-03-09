@@ -1,0 +1,11 @@
+extends ../../layout/adminHeader
+include ../../nav/adminTopbar
+block content
+	link(rel="stylesheet" href="/admin/css/program.css")
+	script(src="/admin/js/program.js")
+	include ../../nav/adminSidebar
+	.content
+		form(action="/admin/tag/add" method="post")
+			| name:
+			input(name="name" class="form-control" required="required")
+			button(class="btn btn-success" type="submit") 添加

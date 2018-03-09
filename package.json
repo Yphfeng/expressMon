@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo test",
+    "production": "pm2 start pm2.json"
+  },
+  "devDependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "domain": "^0.0.1",
+    "express-generator": "^4.15.5",
+    "express-session": "^1.15.6",
+    "http": "^0.0.0",
+    "jade": "^1.11.0",
+    "mongoose": "^4.13.7",
+    "morgan": "^1.9.0",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.4.5",
+    "ueditor": "^1.2.3"
+  }
+}

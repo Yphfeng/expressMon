@@ -1,0 +1,22 @@
+extends ../layout/header
+block content
+	include ../layout/topbar
+	.box
+		.container
+			.container-left
+				each item in data.all
+					-var date = new Date(Number.parseInt(item.date.updateAt));
+					ul.list
+						li.item
+							a.programDiv(href="/life/one?id=#{item._id}")
+								.sub-title
+									h5.title= item.title
+									.label.right
+										span(style="margin-right:15px") 最后更新：#{date.getFullYear()+'/'+(date.getMonth() + 1)+"/"+date.getDate()}
+								.content
+								p!= item.content
+			.container-right
+				include ./archiveLife
+		.M-box
+		input(type="hidden" value=data.total).pageTotal
+	include ../layout/footer

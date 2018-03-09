@@ -1,0 +1,96 @@
+html,body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+	font-family: "MICROSOFT YAHEI";
+	font-size: 12px;
+}
+input{
+	outline: none;
+	background: none;
+	border: 0;
+}
+input:focus{
+	border-color: #2d8cf0;
+}
+input:-webkit-autofill{
+	background: none;
+	-webkit-box-shadow: 0 0 0 1000px white inset;
+}
+:-webkit-input-placeholder{
+	color: #666;
+}
+.app{
+	width: 100%;
+	height: 100%;
+}
+.login-page{
+	width: 100%;
+	height: 100%;
+	background: url(/admin/img/login_bg.jpg) center center no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.login-in{
+	position: absolute;
+	top: 50%;
+	right: 160px;
+	width: 300px;
+	transform: translateY(-60%);
+	background: #fff;
+	border-radius: 3px;
+}
+.login-in h1{
+	font-size: 14px;
+	font-weight: bold;
+	border-bottom: 1px solid #dcdcdc;
+	padding: 15px;
+	margin: 0;
+}
+.login-in form{
+	padding: 15px;
+}
+.form-control{
+	margin-bottom: 20px;
+}
+.form-control:after{
+	content:'';
+	clear: both;
+	display: table;
+}
+.form-label{
+	float: left;
+	padding: 6px 7px;
+	border-radius: 5px 0 0 5px;
+	border: 1px solid #dddee1;
+	border-right: 0;
+	background: #eee;
+}
+.form-input{
+	float: left;
+	width: 220px;
+	border: 1px solid #dddee1;
+	padding: 5px 10px;
+	border-radius: 0 5px 5px 0;
+}
+.btn-submit{
+	text-align: center;
+	height: 26px;
+	width: 100%;
+	line-height: 26px;
+	display: block;
+	margin: 0 auto;
+	background: #2d8cf0;
+	color: #fff;
+	border-radius: 4px;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+}
+input.error{
+	border-color: red;
+}
+label.error{
+	color: red;
+}

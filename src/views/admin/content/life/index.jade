@@ -1,0 +1,26 @@
+extends ../../layout/adminHeader
+
+include ../../nav/adminTopbar
+block content
+  link(rel="stylesheet" href="/admin/css/program.css")
+  script(src="/admin/js/life.js")
+  include ../../nav/adminSidebar
+  .content
+    h3= one.title
+    .addProgram.container
+      h4 博文列表:
+      table.table.table-hover(style="width:100%")
+        thead
+          th 博文
+          th(width='200') 修改时间
+          th(width='200') 操作
+        each item in docs.data
+          tr
+            td
+              div(title=item.content)!= item.content
+            td(width="200px")= new Date(parseInt(item.date.updateAt)).getFullYear()+"-"+parseInt(new Date(parseInt(item.date.updateAt)).getMonth()+1)+"-"+new Date(parseInt(item.date.updateAt)).getDate()
+            td(align="center" width="200")
+              a(href='/admin/program/edit?_id=#{item._id}').edit 修改
+              a(onclick="del('#{item._id}')" href="javascript:;").delete 删除
+      <div class="M-box"></div>
+      input(type="hidden" value=docs.total).pageTotal
